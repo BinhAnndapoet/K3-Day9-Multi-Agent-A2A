@@ -1,0 +1,4 @@
+openai>=1.40.0
+python-dotenv>=1.0.0
+# pandas không bắt buộc (data_layer dùng stdlib csv); giữ để tiện phân tích nếu cần
+# pandas>=2.0.0

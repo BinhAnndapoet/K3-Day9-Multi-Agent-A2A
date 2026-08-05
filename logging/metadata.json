@@ -1,0 +1,26 @@
+{
+  "model": "gpt-4o-mini",
+  "parameter_size": "~8B (OpenAI hosted, không lộ thông số chính thức)",
+  "framework": "Python 3.11.15 + openai SDK (orchestration multi-agent tự viết, không framework nặng)",
+  "runtime": "CPython 3.11.15 on Windows 10",
+  "agent_count": 6,
+  "agents": [
+    "coordinator",
+    "order_seller_agent",
+    "payment_agent",
+    "delivery_agent",
+    "policy_agent",
+    "verifier_agent"
+  ],
+  "policy_version": "EC_POLICY_V1",
+  "case_count": 50,
+  "elapsed_seconds": 354.72,
+  "primary_issue_distribution": {
+    "late_delivery_seller": 8,
+    "unsupported_late_claim": 9,
+    "canceled_order_paid": 8,
+    "valid_split_payment": 9,
+    "unavailable_order_paid": 8,
+    "late_delivery_logistics": 8
+  }
+}
